@@ -1,0 +1,420 @@
+
+    <html>
+    <head>
+        <title>Insider Risk Report</title>
+
+        <style>
+
+            body {
+                font-family: Arial;
+                margin: 40px;
+            }
+
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            th, td {
+                border: 1px solid #ddd;
+                padding: 8px;
+            }
+
+            th {
+                background-color: #f4f4f4;
+            }
+
+            img {
+                max-width: 100%;
+                border: 1px solid #ddd;
+                margin-bottom: 20px;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <h1>Insider Risk Report</h1>
+
+        <h2>Visual Analytics</h2>
+
+        <img src="charts/top_risk_users.png">
+
+        <img src="charts/risk_distribution.png">
+
+        <img src="charts/severity_distribution.png">
+
+        <img src="charts/activity_by_hour.png">
+
+        <h2>Detected Users</h2>
+
+        <table border="1" class="dataframe risk-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th>user</th>
+      <th>total_events</th>
+      <th>total_downloads</th>
+      <th>risk_score</th>
+      <th>severity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>suspicious_user_2</td>
+      <td>65</td>
+      <td>13651</td>
+      <td>156</td>
+      <td>HIGH</td>
+    </tr>
+    <tr>
+      <td>suspicious_user_1</td>
+      <td>65</td>
+      <td>13234</td>
+      <td>156</td>
+      <td>HIGH</td>
+    </tr>
+    <tr>
+      <td>suspicious_user_0</td>
+      <td>65</td>
+      <td>14949</td>
+      <td>154</td>
+      <td>HIGH</td>
+    </tr>
+    <tr>
+      <td>suspicious_user_3</td>
+      <td>65</td>
+      <td>14661</td>
+      <td>151</td>
+      <td>HIGH</td>
+    </tr>
+    <tr>
+      <td>suspicious_user_4</td>
+      <td>65</td>
+      <td>14708</td>
+      <td>150</td>
+      <td>HIGH</td>
+    </tr>
+    <tr>
+      <td>phill</td>
+      <td>100</td>
+      <td>554</td>
+      <td>84</td>
+      <td>HIGH</td>
+    </tr>
+    <tr>
+      <td>kayleelowery</td>
+      <td>100</td>
+      <td>556</td>
+      <td>82</td>
+      <td>HIGH</td>
+    </tr>
+    <tr>
+      <td>smithbrian</td>
+      <td>100</td>
+      <td>558</td>
+      <td>82</td>
+      <td>HIGH</td>
+    </tr>
+    <tr>
+      <td>butlergary</td>
+      <td>100</td>
+      <td>583</td>
+      <td>79</td>
+      <td>MEDIUM</td>
+    </tr>
+    <tr>
+      <td>xnichols</td>
+      <td>100</td>
+      <td>580</td>
+      <td>78</td>
+      <td>MEDIUM</td>
+    </tr>
+    <tr>
+      <td>stacey78</td>
+      <td>100</td>
+      <td>541</td>
+      <td>77</td>
+      <td>MEDIUM</td>
+    </tr>
+    <tr>
+      <td>sburton</td>
+      <td>100</td>
+      <td>539</td>
+      <td>77</td>
+      <td>MEDIUM</td>
+    </tr>
+    <tr>
+      <td>millerlori</td>
+      <td>100</td>
+      <td>582</td>
+      <td>77</td>
+      <td>MEDIUM</td>
+    </tr>
+    <tr>
+      <td>tarastewart</td>
+      <td>100</td>
+      <td>527</td>
+      <td>76</td>
+      <td>MEDIUM</td>
+    </tr>
+    <tr>
+      <td>dave45</td>
+      <td>100</td>
+      <td>567</td>
+      <td>76</td>
+      <td>MEDIUM</td>
+    </tr>
+    <tr>
+      <td>cynthiaburns</td>
+      <td>100</td>
+      <td>593</td>
+      <td>76</td>
+      <td>MEDIUM</td>
+    </tr>
+    <tr>
+      <td>hwilliams</td>
+      <td>100</td>
+      <td>560</td>
+      <td>75</td>
+      <td>MEDIUM</td>
+    </tr>
+    <tr>
+      <td>halljonathan</td>
+      <td>100</td>
+      <td>609</td>
+      <td>75</td>
+      <td>MEDIUM</td>
+    </tr>
+    <tr>
+      <td>potterbrian</td>
+      <td>100</td>
+      <td>578</td>
+      <td>75</td>
+      <td>MEDIUM</td>
+    </tr>
+    <tr>
+      <td>brianchan</td>
+      <td>100</td>
+      <td>554</td>
+      <td>75</td>
+      <td>MEDIUM</td>
+    </tr>
+    <tr>
+      <td>soliscody</td>
+      <td>100</td>
+      <td>569</td>
+      <td>75</td>
+      <td>MEDIUM</td>
+    </tr>
+    <tr>
+      <td>bradleyvalerie</td>
+      <td>100</td>
+      <td>575</td>
+      <td>75</td>
+      <td>MEDIUM</td>
+    </tr>
+    <tr>
+      <td>jonathongonzalez</td>
+      <td>100</td>
+      <td>553</td>
+      <td>74</td>
+      <td>MEDIUM</td>
+    </tr>
+    <tr>
+      <td>kristi14</td>
+      <td>100</td>
+      <td>571</td>
+      <td>74</td>
+      <td>MEDIUM</td>
+    </tr>
+    <tr>
+      <td>lindsey18</td>
+      <td>100</td>
+      <td>570</td>
+      <td>73</td>
+      <td>MEDIUM</td>
+    </tr>
+    <tr>
+      <td>kennedyrose</td>
+      <td>100</td>
+      <td>494</td>
+      <td>73</td>
+      <td>MEDIUM</td>
+    </tr>
+    <tr>
+      <td>clarkerebecca</td>
+      <td>100</td>
+      <td>574</td>
+      <td>72</td>
+      <td>MEDIUM</td>
+    </tr>
+    <tr>
+      <td>mollycoleman</td>
+      <td>100</td>
+      <td>509</td>
+      <td>72</td>
+      <td>MEDIUM</td>
+    </tr>
+    <tr>
+      <td>xdavis</td>
+      <td>100</td>
+      <td>559</td>
+      <td>72</td>
+      <td>MEDIUM</td>
+    </tr>
+    <tr>
+      <td>josewashington</td>
+      <td>100</td>
+      <td>575</td>
+      <td>72</td>
+      <td>MEDIUM</td>
+    </tr>
+    <tr>
+      <td>wjuarez</td>
+      <td>100</td>
+      <td>592</td>
+      <td>71</td>
+      <td>MEDIUM</td>
+    </tr>
+    <tr>
+      <td>gregorylevine</td>
+      <td>100</td>
+      <td>532</td>
+      <td>71</td>
+      <td>MEDIUM</td>
+    </tr>
+    <tr>
+      <td>tlewis</td>
+      <td>100</td>
+      <td>592</td>
+      <td>71</td>
+      <td>MEDIUM</td>
+    </tr>
+    <tr>
+      <td>pwright</td>
+      <td>100</td>
+      <td>519</td>
+      <td>70</td>
+      <td>MEDIUM</td>
+    </tr>
+    <tr>
+      <td>vboone</td>
+      <td>100</td>
+      <td>546</td>
+      <td>70</td>
+      <td>MEDIUM</td>
+    </tr>
+    <tr>
+      <td>debbieoconnor</td>
+      <td>100</td>
+      <td>604</td>
+      <td>70</td>
+      <td>MEDIUM</td>
+    </tr>
+    <tr>
+      <td>boydadrienne</td>
+      <td>100</td>
+      <td>605</td>
+      <td>70</td>
+      <td>MEDIUM</td>
+    </tr>
+    <tr>
+      <td>ryanchristopher</td>
+      <td>100</td>
+      <td>559</td>
+      <td>70</td>
+      <td>MEDIUM</td>
+    </tr>
+    <tr>
+      <td>mark05</td>
+      <td>100</td>
+      <td>610</td>
+      <td>70</td>
+      <td>MEDIUM</td>
+    </tr>
+    <tr>
+      <td>nvaughan</td>
+      <td>100</td>
+      <td>566</td>
+      <td>69</td>
+      <td>MEDIUM</td>
+    </tr>
+    <tr>
+      <td>tylerschneider</td>
+      <td>100</td>
+      <td>528</td>
+      <td>69</td>
+      <td>MEDIUM</td>
+    </tr>
+    <tr>
+      <td>edwarddixon</td>
+      <td>100</td>
+      <td>520</td>
+      <td>68</td>
+      <td>MEDIUM</td>
+    </tr>
+    <tr>
+      <td>brendajohnson</td>
+      <td>100</td>
+      <td>572</td>
+      <td>68</td>
+      <td>MEDIUM</td>
+    </tr>
+    <tr>
+      <td>fwright</td>
+      <td>100</td>
+      <td>523</td>
+      <td>67</td>
+      <td>MEDIUM</td>
+    </tr>
+    <tr>
+      <td>qmunoz</td>
+      <td>100</td>
+      <td>553</td>
+      <td>67</td>
+      <td>MEDIUM</td>
+    </tr>
+    <tr>
+      <td>osmith</td>
+      <td>100</td>
+      <td>548</td>
+      <td>67</td>
+      <td>MEDIUM</td>
+    </tr>
+    <tr>
+      <td>kho</td>
+      <td>100</td>
+      <td>555</td>
+      <td>67</td>
+      <td>MEDIUM</td>
+    </tr>
+    <tr>
+      <td>kramerjuan</td>
+      <td>100</td>
+      <td>505</td>
+      <td>66</td>
+      <td>MEDIUM</td>
+    </tr>
+    <tr>
+      <td>harrismark</td>
+      <td>100</td>
+      <td>521</td>
+      <td>66</td>
+      <td>MEDIUM</td>
+    </tr>
+    <tr>
+      <td>kristinmorgan</td>
+      <td>100</td>
+      <td>555</td>
+      <td>57</td>
+      <td>MEDIUM</td>
+    </tr>
+  </tbody>
+</table>
+
+    </body>
+
+    </html>
+    
